@@ -1,23 +1,39 @@
 * {
     margin-top: 10;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* bound to change but I'm keeping it for now*/
     background-color:#;
+}
+
+body {
+    background-image: url("images/palmtrees2.jpeg");
+    background-repeat: no-repeat; /* prevents the thing from looking like a collage */
+    background-size: cover;
+    filter: none;
 }
 
 .heading {
     text-align: center;
 }
 
+/* The actual form where things happens */
 .login-form {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; /* Stops the inputs from sticking to each other like candlesticks */
     width: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 0 auto 0 auto;
-    border: 1px solid black;
+    margin: 0 auto 0 auto; /* this centers the elements in the form */
+
+    /* This will give it a glass effect*/
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px) ;
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 3.7);
+
 }
 
 .submit-container {
