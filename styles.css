@@ -5,14 +5,12 @@
 }
 
 body {
-    background-image: url("images/palmtrees2.jpeg");
-    background-repeat: no-repeat; /* prevents the thing from looking like a collage */
-    background-size: cover;
-    filter: none;
+    background-color: rgb(68, 255, 0);
 }
 
 .heading {
     text-align: center;
+    background-color: whitesmoke;
 }
 
 /* The actual form where things happens */
@@ -24,16 +22,8 @@ body {
     width: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 0 auto 0 auto; /* this centers the elements in the form */
-
-    /* This will give it a glass effect*/
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px) ;
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 3.7);
-
+    margin: 200px 500px 100px 500px; /* this centers the elements in the form */
+    background-color: whitesmoke;
 }
 
 .submit-container {
