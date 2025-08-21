@@ -1,0 +1,38 @@
+* {
+    margin-top: 10;
+    font-family: Arial, Helvetica, sans-serif; /* bound to change but I'm keeping it for now*/
+    background-color:#;
+}
+
+body {
+    background-color: rgb(68, 255, 0);
+}
+
+.heading {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+/* The actual form where things happens */
+.signup-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Stops the inputs from sticking to each other like candlesticks */
+    width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 100px 500px 100px 500px; /* this centers the elements in the form (top, right, bottom, left) */
+    background-color: whitesmoke;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit {
+    margin-top: 10px;
+    width: 70px;
+}
