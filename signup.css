@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color: rgb(68, 255, 0);
+    background-color: white;
 }
 
 .heading {
     text-align: center;
     background-color: whitesmoke;
+    color: rgb(0, 255, 4);
 }
 
 /* The actual form where things happens */
@@ -24,7 +25,14 @@ body {
     padding-bottom: 30px;
     margin: 100px 500px 100px 500px; /* this centers the elements in the form (top, right, bottom, left) */
     background-color: whitesmoke;
+    border: 1px black solid;
 }
+
+label {
+    width: 100px;
+    display: inline-block;
+}
+
 
 .submit-container {
     display: flex;
