@@ -51,6 +51,7 @@ li {
 
 /* History Container */
 /* Contains the History chart */
+/* Should change the flex direction to column soon */
 .hist-container {
     display: flex;
     flex-direction: row;
@@ -60,3 +61,8 @@ li {
 
 /* History Chart */
 /* Where all your past transactions go */
+.hist-chart {
+    background-color: white;
+    width: 700px;
+    height: 700px;
+}
