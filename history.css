@@ -29,3 +29,57 @@ li {
     margin-left: 50px;
     margin-top: 6px;
 }
+
+/* History Container */
+/* Contains the History chart */
+/* Should change the flex direction to column soon */
+.hist-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* History Chart */
+/* Where all your past transactions go */
+.hist-chart {
+    background-color: white;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* The Recent History h3 element is leaning into the div like a drunkard. I don't like it */
+.rec-hist {
+    margin-left: 10px;
+}
+
+/* This is the stylish line sitting in the web page */
+hr {
+    width: 688px;
+}
+
+/* Contains the entries */
+.entries-container {
+    overflow-y: scroll;
+    height: 600px;
+    scrollbar-width: none;
+}
+
+/* These are the entries */
+.entry {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#amount-red {
+    color: red;
+}
+
+#amount-green {
+    color: green;
+}

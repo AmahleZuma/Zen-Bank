@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenPay - Transaction History</title>
+    <title>ZenPay Transaction History</title>
     <link rel="stylesheet" href="history.css">
 </head>
 <body>
@@ -16,6 +16,52 @@
             <li class="nav-element">History</li>
         </ul>
     </nav>
+
+    <!-- Actual History -->
+
+    <div class="hist-container">
+        <div class="hist-chart">
+            <h3 class="rec-hist">History</h3>
+            <hr>
+
+            
+            <div class="entries-container">
+
+                <!-- For future reference: "First entry" actually means at the bottom. Newer ones come up on top -->
+
+                <!-- Money going out -->
+                <div class="entry" id="entry-2">
+                    <p class="subject-ref" id="subject-ref">
+                        Transfer: MyBoi
+                    </p>
+                    <p class="date" id="date">
+                        25 August 2025
+                    </p>
+                    <!-- Money going out == red -->
+                    <p class="amount" id="amount-red">
+                        -R25
+                    </p>
+                </div>
+
+                <!-- Money coming in-->
+                <div class="entry" id="entry-1">
+                    <p class="subject-ref" id="subject-ref">
+                        Desposit: Myself
+                    </p>
+                    <p class="date" id="date">
+                        24 August 2025
+                    </p>
+                    <!-- Money coming in == green -->
+                    <p class="amount" id="amount-green">
+                        +R25
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
 
 
 </body>
