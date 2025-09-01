@@ -16,6 +16,10 @@ nav {
     color: white;
 }
 
+.navlink {
+    color: white;
+}
+
 ul {
     list-style-type: none;
     margin-left: 100px;
