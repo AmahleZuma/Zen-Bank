@@ -16,6 +16,18 @@ nav {
     color: white;
 }
 
+/* Trying to make this look like Paypal */
+.navlink {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Centering the words */
+.navlink li {
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     margin-left: 100px;
