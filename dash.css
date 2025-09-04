@@ -7,8 +7,10 @@ body {
 #heading {
     margin-left: 50px;
     color: white;
+    cursor: pointer;
 }
 
+/* Navbar styling */
 .navbar {
     margin: 0px;
     background-color:  #07A219;
@@ -39,6 +41,28 @@ body {
     border-radius: 50px;
     width: 78px;
     height: 20px;
+}
+
+/* transaction container styling */
+.transact-container {
+    margin-top: 20px;
+    margin-right: 450px;
+    display: flex;
+    justify-content: end;
+}
+
+/* Actual transaction button styling */
+.newtransaction {
+    color: white;
+    background-color: #07A219;
+    width: 100px; 
+    border: 1px solid #07A219;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.newtransaction:hover {
+    background-color: #07d31f;
 }
 
 
