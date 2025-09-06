@@ -85,6 +85,22 @@ body {
     height: 300px;
 }
 
+/* Transaction form that will be hidden until I press new transaction */
+.transact-form {
+    text-align: center;
+    display: none;
+    gap: 20px;
+    width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 200px 500px 100px 500px; /* this centers the elements in the form (top, right, bottom, left) */
+    flex-direction: column;
+    /* width: 300px; */
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1px black solid;
+}
+
 /* History Container */
 /* Contains the History chart */
 /* Should change the flex direction to column soon */

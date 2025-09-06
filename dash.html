@@ -27,36 +27,49 @@
         <div class="balance-chart">
 
         <!-- TODO: Remove <br> tags and change the margins to make them a little close. They seem too segregated -->
-        <h2>
-           ZenPay Balance
-        </h2>
-        <br>
-        <h1>
-            R500,00
-        </h1>
-        <br>
-        <h5>
-            Available
-        </h5>
-    </div>
+            <h2>
+            ZenPay Balance
+            </h2>
+            <br>
+            <h1>
+                R500,00
+            </h1>
+            <br>
+            <h5>
+                Available
+            </h5>
+        </div>
     </div>
 
     <!-- Transaction form -->
-    <form action="GET" id="transact-form">
-        <label for="name">Name:</label>
-        <input type="text" maxlength="20" id="name" required>
+    <form action="GET" id="transact-form" class="transact-form"> 
 
-        <label for="email">Email:</label>
-        <input type="text" maxlength="20" id="email" required>
+        <div class="name">
+            <label for="name">Name:</label>
+            <input type="text" maxlength="20" id="name" required>
+        </div>
+        
+        <div class="email">
+            <label for="email">Email:</label>
+            <input type="text" maxlength="20" id="email" required>
+        </div>
 
-        <label for="amiunt">Amount: R</label>
-        <input type="number" id="self-reference" required>
+        <div class="amount">
+            <label for="amount">Amount: R</label>
+            <input type="number" id="amount" required>
+        </div>
 
-        <label for="self-reference">Your Reference</label>
-        <input type="text" id="self-reference" required>
+        <div class="self-reference">
+            <label for="self-reference">Your Reference</label>
+            <input type="text" id="self-reference" required>
+        </div>
 
-        <label for="reference">Their Reference</label>
-        <input type="text" id="reference" required>
+
+        <div class="reference">
+            <label for="reference">Their Reference</label>
+            <input type="text" id="reference" required>
+        </div>
+
     </form>
 
     <!-- History Chart -->
