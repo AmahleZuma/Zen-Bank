@@ -1,0 +1,1 @@
+const transactForm = document.getElementById("transact-form")
