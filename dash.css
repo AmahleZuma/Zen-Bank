@@ -88,7 +88,7 @@ body {
 /* Transaction form that will be hidden until I press new transaction */
 .transact-form {
     text-align: center;
-    display: none;
+    /* display: flex; */
     gap: 20px;
     width: 500px;
     padding-top: 30px;
