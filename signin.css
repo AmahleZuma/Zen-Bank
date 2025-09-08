@@ -11,7 +11,7 @@ body {
 .heading {
     text-align: center;
     background-color: whitesmoke;
-    color: rgb(0, 255, 4);
+    color: #07A219;
 }
 
 /* The actual form where things happens */
@@ -36,5 +36,11 @@ body {
 
 .submit {
     margin-top: 10px;
-    width: 50px;
+    margin-top: 10px;
+    color: white;
+    background-color: #07A219;
+    width: 100px; 
+    height: 30px;
+    border: 1px solid #07A219;
+    cursor: pointer;
 }

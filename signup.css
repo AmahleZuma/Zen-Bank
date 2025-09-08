@@ -11,7 +11,7 @@ body {
 .heading {
     text-align: center;
     background-color: whitesmoke;
-    color: rgb(0, 255, 4);
+    color: #07A219;
 }
 
 /* The actual form where things happens */
@@ -43,4 +43,10 @@ label {
 .submit {
     margin-top: 10px;
     width: 70px;
+    height: 35px;
+    color: white;
+    background-color: #07A219;
+    width: 100px; 
+    border: 1px solid #07A219;
+    cursor: pointer;
 }
