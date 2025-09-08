@@ -86,41 +86,32 @@ body {
 }
 
 .popup-overlay {
+    display: none; /* Hidden by default */
     position: fixed;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
 /* Transaction form that will be hidden until I press new transaction */
 .transact-form {
-    /* text-align: center;
+    text-align: center;
     display: flex;
     gap: 20px;
     width: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 50px 500px 50px 500px; /* this centers the elements in the form (top, right, bottom, left) */
-    /* flex-direction: column; */
-    /* width: 300px; */
-    /* align-items: center;
+    margin: 230px 500px 50px 500px; /* this centers the elements in the form (top, right, bottom, left) */
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
     background-color: whitesmoke;
-    border: 1px black solid; */ */
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0; /* Remove the old margins */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    
+    border: 1px black solid;
 }
 
-/* Close button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -129,14 +120,14 @@ body {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #666;
+    color: white;
     padding: 0;
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
 }
 
 .close-btn:hover {
-    color: #000;
+    color: rgb(14, 211, 14);
 }
 
 /* History Container */

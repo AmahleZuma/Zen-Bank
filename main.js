@@ -16,5 +16,12 @@ function hideOverlay() {
 };
 
 // Event listeners
+newtransaction.addEventListener("click", showOverlay);
+closepopup.addEventListener("click", hideOverlay);
 
+popupOverlay.addEventListener("click", function(e) {
+    if (e.target === popupOverlay) {
+        hideOverlay()
+    }
+});
 
