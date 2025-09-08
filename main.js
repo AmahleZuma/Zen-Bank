@@ -25,3 +25,10 @@ popupOverlay.addEventListener("click", function(e) {
     }
 });
 
+/*
+TODO
+I need to make a function that:
+1. makes a new div
+2. edits the elements accordingly(Transaction Type + Reference, Date, Amount)
+
+*/
