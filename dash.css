@@ -93,7 +93,7 @@ body {
     width: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 200px 500px 100px 500px; /* this centers the elements in the form (top, right, bottom, left) */
+    margin: 50px 500px 50px 500px; /* this centers the elements in the form (top, right, bottom, left) */
     flex-direction: column;
     /* width: 300px; */
     align-items: center;

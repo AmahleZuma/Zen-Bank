@@ -19,7 +19,7 @@
 
     <!-- New Transaction button -->
     <div class="transact-container">
-        <button type="button" class="newtransaction" onclick="hideTransactForm()">New Transaction</button>
+        <button type="button" class="newtransaction" id="newtransaction">New Transaction</button>
     </div>
 
     <!-- Balance Chart -->
@@ -68,6 +68,10 @@
         <div class="reference">
             <label for="reference">Their Reference</label>
             <input type="text" id="reference" required>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="submit">
         </div>
 
     </form>
