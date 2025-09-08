@@ -1,19 +1,20 @@
 const transactForm = document.getElementById("transact-form");
 const newtransaction = document.getElementById("newtransaction");
+const popupOverlay = document.getElementById("popup-overlay");
+const closepopup = document.getElementById("close-btn");
 
-transactForm.style.display = "none"
+// Show the overlay 
 
-function hideTransactForm(){
-
-    if (transactForm.style.display === "none"){
-        transactForm.style.display = "flex";
-    } else {
-        transactForm.style.display = "none"
-    }
+function showOverlay(){
+    popupOverlay.style.display = "block";
 };
 
-newtransaction.addEventListener("click", () => {
-    hideTransactForm()
-})
+// Hide the overlay 
+
+function hideOverlay() {
+    popupOverlay.style.display = "none";
+};
+
+// Event listeners
 
 

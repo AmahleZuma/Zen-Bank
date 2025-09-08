@@ -42,39 +42,44 @@
     </div>
 
     <!-- Transaction form -->
-    <form action="GET" id="transact-form" class="transact-form"> 
+    <div class="popup-overlay">
+            <form action="GET" id="transact-form" class="transact-form"> 
 
-        <div class="name">
-            <label for="name">Name:</label>
-            <input type="text" maxlength="20" id="name" required>
-        </div>
-        
-        <div class="email">
-            <label for="email">Email:</label>
-            <input type="text" maxlength="20" id="email" required>
-        </div>
+                <button type="button" class="close-btn" id="close-btn">&times;</button>
 
-        <div class="amount">
-            <label for="amount">Amount: R</label>
-            <input type="number" id="amount" required>
-        </div>
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input type="text" maxlength="20" id="name" required>
+                </div>
+                
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="text" maxlength="20" id="email" required>
+                </div>
 
-        <div class="self-reference">
-            <label for="self-reference">Your Reference</label>
-            <input type="text" id="self-reference" required>
-        </div>
+                <div class="amount">
+                    <label for="amount">Amount: R</label>
+                    <input type="number" id="amount" required>
+                </div>
+
+                <div class="self-reference">
+                    <label for="self-reference">Your Reference</label>
+                    <input type="text" id="self-reference" required>
+                </div>
 
 
-        <div class="reference">
-            <label for="reference">Their Reference</label>
-            <input type="text" id="reference" required>
-        </div>
+                <div class="reference">
+                    <label for="reference">Their Reference</label>
+                    <input type="text" id="reference" required>
+                </div>
 
-        <div class="submit">
-            <input type="submit" value="submit">
-        </div>
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
 
-    </form>
+        </form>
+    </div>
+
 
     <!-- History Chart -->
     <div class="hist-container">
