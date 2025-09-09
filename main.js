@@ -2,9 +2,15 @@ const transactForm = document.getElementById("transact-form");
 const newtransaction = document.getElementById("newtransaction");
 const popupOverlay = document.getElementById("popup-overlay");
 const closepopup = document.getElementById("close-btn");
+const recentHistory = document.getElementById("hist-chart");
+const entriesContainer = document.getElementById("entries-container");
+
+// Making a div
+var entryThree = document.createElement("div");
+entryThree.textContent = "Hello World";
+entriesContainer.prepend(entryThree);
 
 // Show the overlay 
-
 function showOverlay(){
     popupOverlay.style.display = "block";
 };
