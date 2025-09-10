@@ -7,8 +7,10 @@ const entriesContainer = document.getElementById("entries-container");
 
 // Making a div
 var entryThree = document.createElement("div");
-entryThree.textContent = "Hello World";
-entriesContainer.prepend(entryThree);
+entryThree.innerHTML = "Hello World";
+entryThree.style.display = "flex"; // Flex display
+entryThree.style.padding = "15px"; // Same padding as the css hardcoded ones
+entriesContainer.prepend(entryThree); // Adding the div before the others as opposed to after
 
 // Show the overlay 
 function showOverlay(){
