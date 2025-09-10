@@ -5,7 +5,7 @@ const closepopup = document.getElementById("close-btn");
 const recentHistory = document.getElementById("hist-chart");
 const entriesContainer = document.getElementById("entries-container");
 
-// Making a div
+// Making a div for entries
 var entryThree = document.createElement("div");
 entryThree.innerHTML = "Hello World";
 entryThree.style.display = "flex"; // Flex display
