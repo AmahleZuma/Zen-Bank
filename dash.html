@@ -57,6 +57,16 @@
                     <input type="text" maxlength="20" id="email" required>
                 </div>
 
+                <div class="transaction-type">
+                    <label for="type">Type:</label>
+                    <select name="type" id="transaction-type" class="transaction-type">
+                        <option value="pay">Pay</option>
+                        <option value="request"></option>
+                        <option value="deposit">Deposit</option>
+                        <option value="withdrawal">Withdraw</option>
+                    </select>
+                </div>
+
                 <div class="amount">
                     <label for="amount">Amount: R</label>
                     <input type="number" id="amount" required>
@@ -73,8 +83,8 @@
                     <input type="text" id="reference" required>
                 </div>
 
-                <div class="submit">
-                    <input type="submit" value="submit">
+                <div class="submit" >
+                    <input type="submit" value="submit" id="submit-order">
                 </div>
 
         </form>
