@@ -21,4 +21,4 @@ Yes
 3. Connect the information in the transaction form to the submit button.
 4. Have that information be updated in the 'Recent History' section of the Dash page.
 5. Have that information be updated in the 'History' section of the History page.
-6. Add a visibility option for the password
+6. Add a visibility option for the password.
