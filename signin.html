@@ -10,22 +10,37 @@
     <br>
     <form action="" method="post" class="login-form">
         <h2 class="heading">Welcome back, login to continue with ZenPay</h2>
+
+        <!-- Username -->
         <div class="username-container">
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required />
         </div>
+
+        <!-- Password -->
         <div class="password-container">
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" required />
         </div>
+
+        <!-- Submit -->
         <div class="submit-container">
             <input type="submit" value="login" class="submit" id="submit">
             <br>
+
+            <!-- Ad..because yes -->
             <a href="signup">
                Don't have an account? Sign Up!</span> 
             </a>
         </div>
+
+        <!-- Password Visibilty -->
+         <div class="password-visibility-container">
+            <input type="checkbox" class="password-visibility" id="password-visibility">Show Password
+         </div>
+
     </form>
 
+    <script src="uservalid.js"></script>
 </body>
 </html>
