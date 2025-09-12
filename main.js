@@ -4,6 +4,7 @@ const popupOverlay = document.getElementById("popup-overlay");
 const closepopup = document.getElementById("close-btn");
 const recentHistory = document.getElementById("hist-chart");
 const entriesContainer = document.getElementById("entries-container");
+const submitOrder = document.getElementById("submit-order");
 
 // Making a div for entries
 var entryThree = document.createElement("div");
@@ -13,6 +14,11 @@ entryThree.style.padding = "15px"; // Same padding as the css hardcoded ones
 entryThree.style.flexDirection = "row"; // row flex direction
 entryThree.style.justifyContent = "space between"; 
 entriesContainer.prepend(entryThree); // Adding the div before the others as opposed to after
+
+// This tells us that the submit button has been clicked
+submitOrder.addEventListener("click", function checkOrderSubmit() {
+    console.log("Your order has been submitted and will be processed right now!")
+})
 
 // Show the overlay 
 function showOverlay(){
