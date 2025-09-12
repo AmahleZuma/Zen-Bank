@@ -10,6 +10,8 @@ var entryThree = document.createElement("div");
 entryThree.innerHTML = "Hello World";
 entryThree.style.display = "flex"; // Flex display
 entryThree.style.padding = "15px"; // Same padding as the css hardcoded ones
+entryThree.style.flexDirection = "row"; // row flex direction
+entryThree.style.justifyContent = "space between"; 
 entriesContainer.prepend(entryThree); // Adding the div before the others as opposed to after
 
 // Show the overlay 
