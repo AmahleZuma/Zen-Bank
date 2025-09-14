@@ -4,7 +4,7 @@ const popupOverlay = document.getElementById("popup-overlay");
 const closepopup = document.getElementById("close-btn");
 const recentHistory = document.getElementById("hist-chart");
 const entriesContainer = document.getElementById("entries-container");
-const submitOrder = document.getElementById("submit-order");
+const submitOrder = document.getElementById("submit-order"); // this is a constant and can never change
 
 //information from the submission form:
 let recName = document.getElementById("name"); // name of the person you want to send money to (recipient)
@@ -17,7 +17,6 @@ let transactTypeDeposit = document.getElementById("deposit");
 let transactAmount = document.getElementById("amount");
 let transactSelfRef = document.getElementById("self-reference");
 let transactRef = document.getElementById("reference");
-let transactSubmit = document.getElementById("submit");
 
 
 // Making a div for entries
