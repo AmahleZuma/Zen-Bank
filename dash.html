@@ -47,37 +47,42 @@
 
                 <button type="button" class="close-btn" id="close-btn">&times;</button>
 
+                <!-- name -->
                 <div class="name">
                     <label for="name">Name:</label>
                     <input type="text" maxlength="20" id="name" required>
                 </div>
                 
+                <!-- email -->
                 <div class="email">
                     <label for="email">Email:</label>
                     <input type="text" maxlength="20" id="email" required>
                 </div>
 
+                <!-- transaction type -->
                 <div class="transaction-type">
                     <label for="type">Type:</label>
                     <select name="type" id="transaction-type" class="transaction-type">
-                        <option value="pay">Pay</option>
-                        <option value="request"></option>
-                        <option value="deposit">Deposit</option>
-                        <option value="withdrawal">Withdraw</option>
+                        <option value="pay" id="pay">Pay</option> 
+                        <option value="request" id="request">Request</option>
+                        <option value="deposit" id="deposit">Deposit</option>
+                        <option value="withdrawal" id="withdrawal">Withdraw</option>
                     </select>
                 </div>
 
+                <!-- amount -->
                 <div class="amount">
                     <label for="amount">Amount: R</label>
                     <input type="number" id="amount" required>
                 </div>
 
+                <!-- self-reference -->
                 <div class="self-reference">
                     <label for="self-reference">Your Reference</label>
                     <input type="text" id="self-reference" required>
                 </div>
 
-
+                <!-- reference -->
                 <div class="reference">
                     <label for="reference">Their Reference</label>
                     <input type="text" id="reference" required>
