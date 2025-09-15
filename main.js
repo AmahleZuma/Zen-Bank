@@ -6,8 +6,24 @@ const recentHistory = document.getElementById("hist-chart");
 const entriesContainer = document.getElementById("entries-container");
 const submitOrder = document.getElementById("submit-order"); // this is a constant and can never change
 
+transactForm.addEventListener("submit", function(event){
+    event.preventDefault();
+})
+
+
+// Taking the info from submitOrder
+function showOrder(data) {
+    console.log("The transaction: ", data)
+}
+
+// This tells us that the submit button has been clicked
+submitOrder.addEventListener("click", function checkOrderSubmit() {
+    console.log("Your order has been submitted and will be processed right now!")
+})
+
 //information from the submission form:
-submitOrder.addEventListener("click", function transactInfo() {
+submitOrder.addEventListener("click", function transactInfo(event) {
+    event.preventDefault()
     let recName = document.getElementById("name").value.trim(); // name of the person you want to send money to (recipient)
     let recEmail = document.getElementById("email").value.trim(); // email of the person you want to send money to (also recipient incase you forgot)
     let transactType = document.getElementById("transaction-type").value; // you putting money in, taking money out or paying or receiving?
@@ -20,16 +36,17 @@ submitOrder.addEventListener("click", function transactInfo() {
         return;
    }
 
-
+   showOrder({
+    recName,
+    recEmail,
+    transactType,
+    transactAmount,
+    transactSelfRef,
+    transactRef
+   })
 
 
 })
-
-function showOrder(data) {
-    console.log("The transaction")
-}
-
-
 
 // Making a div for entries
 // It has to be made by a function whenever a transaction has been submitted
@@ -42,12 +59,6 @@ function listHistory() {
     entryThree.style.justifyContent = "space between"; 
     entriesContainer.prepend(entryThree); // Adding the div before the others as opposed to after
 }
-
-
-// This tells us that the submit button has been clicked
-submitOrder.addEventListener("click", function checkOrderSubmit() {
-    console.log("Your order has been submitted and will be processed right now!")
-})
 
 // Show the overlay 
 function showOverlay(){
