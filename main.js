@@ -7,16 +7,24 @@ const entriesContainer = document.getElementById("entries-container");
 const submitOrder = document.getElementById("submit-order"); // this is a constant and can never change
 
 //information from the submission form:
-let recName = document.getElementById("name"); // name of the person you want to send money to (recipient)
-let recEmail = document.getElementById("email"); // email of the person you want to send money to (also recipient incase you forgot)
-let transactType = document.getElementById("transaction-type"); // you putting money in, taking money out or paying or receiving?
-let transactTypePay = document.getElementById("pay");
-let transactTypeRequest = document.getElementById("request");
-let transactTypeWithdraw = document.getElementById("withdraw");
-let transactTypeDeposit = document.getElementById("deposit");
-let transactAmount = document.getElementById("amount");
-let transactSelfRef = document.getElementById("self-reference");
-let transactRef = document.getElementById("reference");
+submitOrder.addEventListener("click", function transactInfo() {
+    let recName = document.getElementById("name").value.trim(); // name of the person you want to send money to (recipient)
+    let recEmail = document.getElementById("email").value.trim(); // email of the person you want to send money to (also recipient incase you forgot)
+    let transactType = document.getElementById("transaction-type").value; // you putting money in, taking money out or paying or receiving?
+    let transactAmount = document.getElementById("amount").value.trim();
+    let transactSelfRef = document.getElementById("self-reference").value.trim();
+    let transactRef = document.getElementById("reference").value.trim();
+    
+   if (!transactType) {
+        alert("Please select a transaction type");
+        return;
+   }
+
+
+
+
+})
+
 
 
 // Making a div for entries
