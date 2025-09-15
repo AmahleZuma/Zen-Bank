@@ -25,6 +25,10 @@ submitOrder.addEventListener("click", function transactInfo() {
 
 })
 
+function showOrder(data) {
+    console.log("The transaction")
+}
+
 
 
 // Making a div for entries
