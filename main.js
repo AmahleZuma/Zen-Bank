@@ -6,9 +6,6 @@ const recentHistory = document.getElementById("hist-chart");
 const entriesContainer = document.getElementById("entries-container");
 const submitOrder = document.getElementById("submit-order"); // this is a constant and can never change
 
-transactForm.addEventListener("submit", function(event){
-    event.preventDefault();
-})
 
 
 // Taking the info from submitOrder
@@ -22,8 +19,9 @@ submitOrder.addEventListener("click", function checkOrderSubmit() {
 })
 
 //information from the submission form:
-submitOrder.addEventListener("click", function transactInfo(event) {
-    event.preventDefault()
+submitOrder.addEventListener("click", function transactInfo() {
+
+
     let recName = document.getElementById("name").value.trim(); // name of the person you want to send money to (recipient)
     let recEmail = document.getElementById("email").value.trim(); // email of the person you want to send money to (also recipient incase you forgot)
     let transactType = document.getElementById("transaction-type").value; // you putting money in, taking money out or paying or receiving?
