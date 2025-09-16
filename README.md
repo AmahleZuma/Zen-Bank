@@ -18,7 +18,8 @@ Yes
 # TODO (NOT IN ANY PARTICULAR ORDER)
 1. Watch video on DOM Manipulation, as I have literally just been googling and failing my way forward, which is a painfully slow process.
 2. Create an event listener for the transaction form submit button. ✅ Done! (12/09/2025)
-3. Connect the information in the transaction form to the submit button.
+3. Connect the information in the transaction form to the submit button. ✅ Done! (16/09/2025)
 4. Have that information be updated in the 'Recent History' section of the Dash page.
 5. Have that information be updated in the 'History' section of the History page.
 6. Add a visibility option for the password. ✅ Done! (13/09/2025)
+7. Watch a video on LocalStorage so that I can achieve TODO sections 4 and 3. 
