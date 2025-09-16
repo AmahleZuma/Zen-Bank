@@ -3,7 +3,7 @@
 # FAQs
 
 **Security? Nah, we are not for that**
-Just give us your username and password. We promise not to **not** hash it...or "mistakingly" sharing it like an api key.
+Just give us your username and password. We promise not to **not** hash it...or "mistakingly" share it on Twitter for all to see.
 **Source:** Trust us bro
 
 **Great UX Design? Nope, not all of us are Soy Latte drinking hippies(No offence to my hippies)**
