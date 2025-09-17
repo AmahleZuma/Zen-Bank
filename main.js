@@ -28,6 +28,7 @@ submitOrder.addEventListener("click", function transactInfo() {
     let transactAmount = document.getElementById("amount").value.trim();
     let transactSelfRef = document.getElementById("self-reference").value.trim();
     let transactRef = document.getElementById("reference").value.trim();
+    let transactDate = document.getElementById("reference").value;
     
    if (!transactType) {
         alert("Please select a transaction type");
@@ -40,7 +41,8 @@ submitOrder.addEventListener("click", function transactInfo() {
     transactType,
     transactAmount,
     transactSelfRef,
-    transactRef
+    transactRef,
+    transactDate
    })
 
 
