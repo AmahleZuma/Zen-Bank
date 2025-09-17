@@ -16,7 +16,7 @@ Lol!
 Yes
 
 # TODO (NOT IN ANY PARTICULAR ORDER)
-1. Watch video on DOM Manipulation, as I have literally just been googling and failing my way forward, which is a painfully slow process.
+1. Watch video on DOM Manipulation, as I have literally just been googling and failing my way forward, which is a painfully slow process.  ✅ Done...it felt like pulling my teeth out(17/09/2025)
 2. Create an event listener for the transaction form submit button. ✅ Done! (12/09/2025)
 3. Connect the information in the transaction form to the submit button. ✅ Done! (16/09/2025)
 4. Have that information be updated in the 'Recent History' section of the Dash page.
