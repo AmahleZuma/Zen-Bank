@@ -5,8 +5,14 @@ const closepopup = document.getElementById("close-btn");
 const recentHistory = document.getElementById("hist-chart");
 const entriesContainer = document.getElementById("entries-container");
 const submitOrder = document.getElementById("submit-order"); // this is a constant and can never change
+const balance = document.getElementById("balance");
 
 
+// Show the balance
+function showBalance() {
+    balance.innerHTML = "R500,00";
+
+}
 
 // Taking the info from submitOrder
 function showOrder(data) {
@@ -82,6 +88,7 @@ popupOverlay.addEventListener("click", function(e) {
 });
 
 listHistory();
+showBalance();
 
 /*
 TODO
