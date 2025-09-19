@@ -14,10 +14,6 @@ function showBalance() {
 
 }
 
-// Taking the info from submitOrder
-function showOrder(data) {
-    console.log("The transaction: ", data)
-}
 
 // This tells us that the submit button has been clicked
 submitOrder.addEventListener("click", function checkOrderSubmit() {
@@ -27,29 +23,33 @@ submitOrder.addEventListener("click", function checkOrderSubmit() {
 //information from the submission form:
 submitOrder.addEventListener("click", function transactInfo() {
 
-
+    // first bucket the values will drip into
     let recName = document.getElementById("name").value.trim(); // name of the person you want to send money to (recipient)
     let recEmail = document.getElementById("email").value.trim(); // email of the person you want to send money to (also recipient incase you forgot)
     let transactType = document.getElementById("transaction-type").value; // you putting money in, taking money out or paying or receiving?
     let transactAmount = document.getElementById("amount").value.trim();
     let transactSelfRef = document.getElementById("self-reference").value.trim();
     let transactRef = document.getElementById("reference").value.trim();
-    let transactDate = document.getElementById("reference").value;
     
    if (!transactType) {
         alert("Please select a transaction type");
         return;
-   }
+   };
 
-   showOrder({
-    recName,
-    recEmail,
-    transactType,
-    transactAmount,
-    transactSelfRef,
-    transactRef,
-    transactDate
-   })
+
+   // saving the vars into an object
+   const formData = {
+    name: recName,
+    email: recEmail,
+    transaction: transactType,
+    amount: transactAmount,
+    selfref: transactSelfRef,
+    reference: transactRef,
+   };
+
+   localStorage.setItem('transactionFormData', JSON.stringify(formData));
+
+   alert('Transaction complete!')
 
 
 })
