@@ -22,4 +22,4 @@ Yes
 4. Have that information be updated in the 'Recent History' section of the Dash page.
 5. Have that information be updated in the 'History' section of the History page.
 6. Add a visibility option for the password. ✅ Done! (13/09/2025)
-7. Watch a video on LocalStorage so that I can achieve TODO sections 4 and 3. 
+7. Watch a video on LocalStorage so that I can achieve TODO sections 4 and 3. ✅ Done! The video was too boring so I had to use Qwen and w3schools (19/09/2025)
