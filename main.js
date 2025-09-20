@@ -31,6 +31,8 @@ submitOrder.addEventListener("click", function transactInfo() {
     let transactSelfRef = document.getElementById("self-reference").value.trim();
     let transactRef = document.getElementById("reference").value.trim();
     
+
+    // just leaving a comment here, too busy studying to code right now
    if (!transactType) {
         alert("Please select a transaction type");
         return;
