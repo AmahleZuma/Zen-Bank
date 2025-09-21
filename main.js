@@ -51,10 +51,14 @@ submitOrder.addEventListener("click", function transactInfo() {
 
    localStorage.setItem('transactionFormData', JSON.stringify(formData));
 
-   alert('Transaction complete!')
+   return;
 
 
 })
+
+function saveTransactData(transactData) {
+    // again still coding but this is where the code to save the submission data will be
+}
 
 // Making a div for entries
 // It has to be made by a function whenever a transaction has been submitted
