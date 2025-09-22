@@ -49,16 +49,33 @@ submitOrder.addEventListener("click", function transactInfo() {
     reference: transactRef,
    };
 
-   localStorage.setItem('transactionFormData', JSON.stringify(formData));
+   
 
-   return;
+   saveTransactData(formData)
 
 
 })
 
+let transactHistory;
+// trying to get the formData into the function, pushed to an array in local storage
 function saveTransactData(transactData) {
-    // again still coding but this is where the code to save the submission data will be
-}
+    
+    let formDataStorage = localStorage.getItem('transactionFormData');
+    let transactionData = transactData;
+
+    // checks if local storage is empty and then adds data to it(in the form of an array)
+    if (formDataStorage === null) {
+        transactHistory = [];
+        transactHistory.push(transactionData);
+        localStorage.setItem('transactionFormData', JSON.stringify(transactHistory));
+    } else {
+        transactHistory = JSON.parse(formDataStorage);
+        transactHistory.push(transactionData);
+        localStorage.setItem('transactionFormData', JSON.stringify(transactHistory));
+    }
+    
+    
+};
 
 // Making a div for entries
 // It has to be made by a function whenever a transaction has been submitted
@@ -102,4 +119,9 @@ I need to make a function that:
 1. makes a new div
 2. edits the elements accordingly(Transaction Type + Reference, Date, Amount)
 
+*/
+
+/*
+    what am i trying to do?
+    if i press submit, the info gets saved to an array in localstorage
 */
