@@ -121,7 +121,4 @@ I need to make a function that:
 
 */
 
-/*
-    what am i trying to do?
-    if i press submit, the info gets saved to an array in localstorage
-*/
+// Have to study today so I will write some code tomorrow
