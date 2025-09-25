@@ -77,6 +77,14 @@ function saveTransactData(transactData) {
     
 };
 
+function transferTransactHistory(localData) {
+    let transactData = localStorage.getItem('transactionFormData');
+    let transactHistory = localData;
+
+    // Supposed to extract the data and format it into a div here
+    // still studying so I will continue with some of it tomorrow
+}
+
 // Making a div for entries
 // It has to be made by a function whenever a transaction has been submitted
 function listHistory() {
