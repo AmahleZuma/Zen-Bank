@@ -81,6 +81,12 @@ function transferTransactHistory(localData) {
     let transactData = localStorage.getItem('transactionFormData');
     let transactHistory = localData;
 
+    if (transactData == null) {
+        console.log("There is no data");
+    } else {
+        console.log("processing")
+    }
+
     // Supposed to extract the data and format it into a div here
     // still studying so I will continue with some of it tomorrow
 }
