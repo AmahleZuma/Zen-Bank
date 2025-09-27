@@ -24,3 +24,5 @@ Yes
 6. Add a visibility option for the password. ✅ Done! (13/09/2025)
 7. Watch a video on LocalStorage so that I can achieve TODO sections 4 and 3. ✅ Done! The video was too boring so I had to use Qwen and w3schools (19/09/2025)
 8. Store the info succesively  ✅ Done! (22/09/2025)
+
+Right now I am studying for this accounting test(30 September), and it is really eating at me. I will be committing daily but it won't be as impactful until I am finished writing.
