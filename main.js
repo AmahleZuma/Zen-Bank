@@ -51,7 +51,8 @@ submitOrder.addEventListener("click", function transactInfo() {
 
    
 
-   saveTransactData(formData)
+   saveTransactData(formData);
+   transferTransactHistory(formData);
 
 
 })
