@@ -79,7 +79,9 @@ function saveTransactData(transactData) {
 };
 
 function transferTransactHistory(localData) {
+    // we are transfering localstorage data in JSON string form over here
     let transactData = localStorage.getItem('transactionFormData');
+    // translating the argument into a var for us to use
     let transactHistory = localData;
 
     // same as above but some changes of course
