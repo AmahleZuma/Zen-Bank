@@ -48,22 +48,23 @@ submitOrder.addEventListener("click", function transactInfo() {
     selfref: transactSelfRef,
     reference: transactRef,
    };
+   
 
    
 
    saveTransactData(formData);
-   transferTransactHistory(formData);
+   transferTransactHistory();
 
-
+   return
 })
 
-let transactHistory;
+
 // trying to get the formData into the function, pushed to an array in local storage
 function saveTransactData(transactData) {
     
     let formDataStorage = localStorage.getItem('transactionFormData');
     let transactionData = transactData;
-
+    let transactHistory;
     // checks if local storage is empty and then adds data to it(in the form of an array)
     if (formDataStorage === null) {
         transactHistory = [];
@@ -78,18 +79,17 @@ function saveTransactData(transactData) {
     
 };
 
-function transferTransactHistory(localData) {
+function transferTransactHistory() {
     // we are transfering localstorage data in JSON string form over here
-    let transactData = localStorage.getItem('transactionFormData');
-    // translating the argument into a var for us to use
-    let transactHistory = localData;
+    let  transactData = localStorage.getItem('transactionFormData');
+    
 
     // same as above but some changes of course
     if (transactData === null) {
         console.log("There is no data");
     } else {
-        transactHistory = JSON.parse(transactData);
-        console.log(transactHistory); // I want to see what the data presents itself as and loop through it and neaten them up
+        let transactHistory = JSON.parse(transactData);
+        console.log(transactHistory);
     }
 
     // Supposed to extract the data and format it into a div here
@@ -131,6 +131,7 @@ popupOverlay.addEventListener("click", function(e) {
 
 listHistory();
 showBalance();
+
 
 /*
 TODO
