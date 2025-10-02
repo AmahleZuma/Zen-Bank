@@ -86,14 +86,15 @@ function saveTransactData(transactData) {
 
 // This function is meant to take the data and transfer it to the history tab
 function transferTransactHistory() {
-    // we are transfering localstorage data in JSON string form over here
+    // LocalStorage data
     let  transactData = localStorage.getItem('transactionFormData');
+    // We are unlocking the data
     let transactHistory = JSON.parse(transactData);
 
-    // same as above but some changes of course
+    // If there is no data then we let it be
     if (transactData === null) {
         console.log("There is no data");
-
+    // or else we loop through it and log it on the console
     } else {
         
         for (i = 0; i < transactHistory.length; i++){
