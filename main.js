@@ -53,7 +53,7 @@ submitOrder.addEventListener("click", function transactInfo() {
    
 
    saveTransactData(formData);
-   transferTransactHistory();
+  
 
    return
 })
@@ -62,14 +62,19 @@ submitOrder.addEventListener("click", function transactInfo() {
 // trying to get the formData into the function, pushed to an array in local storage
 function saveTransactData(transactData) {
     
+    // This is the local storage data 
     let formDataStorage = localStorage.getItem('transactionFormData');
+    // This is the object the data is stored in
     let transactionData = transactData;
+    // This is the array that stores the objects
     let transactHistory;
-    // checks if local storage is empty and then adds data to it(in the form of an array)
+
+    // checks if local storage is empty and then adds data to the array and stringifys it
     if (formDataStorage === null) {
         transactHistory = [];
         transactHistory.push(transactionData);
         localStorage.setItem('transactionFormData', JSON.stringify(transactHistory));
+    // Or else we assign the local storage item to the array and push in our data
     } else {
         transactHistory = JSON.parse(formDataStorage);
         transactHistory.push(transactionData);
@@ -79,17 +84,21 @@ function saveTransactData(transactData) {
     
 };
 
+// This function is meant to take the data and transfer it to the history tab
 function transferTransactHistory() {
     // we are transfering localstorage data in JSON string form over here
     let  transactData = localStorage.getItem('transactionFormData');
-    
+    let transactHistory = JSON.parse(transactData);
 
     // same as above but some changes of course
     if (transactData === null) {
         console.log("There is no data");
+
     } else {
-        let transactHistory = JSON.parse(transactData);
-        console.log(transactHistory);
+        
+        for (i = 0; i < transactHistory.length; i++){
+            console.log(transactHistory[i]);
+        }
     }
 
     // Supposed to extract the data and format it into a div here
@@ -131,6 +140,7 @@ popupOverlay.addEventListener("click", function(e) {
 
 listHistory();
 showBalance();
+transferTransactHistory();
 
 
 /*
