@@ -101,7 +101,7 @@ function transferTransactHistory() {
         for (i = 0; i < transactHistory.length; i++){
             console.log(transactHistory[i]);
             let histList = document.createElement("div");
-            histList.innerHTML = transactHistory[i];
+            histList.innerHTML = JSON.stringify(transactHistory[i]) // will hopefully convert to string as innerhtml only accepts string
             entriesContainer.prepend(histList); 
         }
     }
