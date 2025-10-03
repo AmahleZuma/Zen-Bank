@@ -97,8 +97,12 @@ function transferTransactHistory() {
     // or else we loop through it and log it on the console
     } else {
         
+        // this should not only log the data to the console but also create a div, put the info and prepend it
         for (i = 0; i < transactHistory.length; i++){
             console.log(transactHistory[i]);
+            let histList = document.createElement("div");
+            histList.innerHTML = transactHistory[i];
+            entriesContainer.prepend(histList); 
         }
     }
 
