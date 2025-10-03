@@ -103,11 +103,9 @@ function transferTransactHistory() {
             let histList = document.createElement("div");
             histList.innerHTML = JSON.stringify(transactHistory[i]) // will hopefully convert to string as innerhtml only accepts string
             entriesContainer.prepend(histList); 
-        }
+        } // TODO: Find a way to specifically take only the value of the object
     }
 
-    // Supposed to extract the data and format it into a div here
-    // still studying so I will continue with some of it tomorrow
 }
 
 // Making a div for entries
