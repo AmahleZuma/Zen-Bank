@@ -123,18 +123,6 @@ function transferTransactHistory() {
 
 }
 
-// Making a div for entries
-// It has to be made by a function whenever a transaction has been submitted
-function listHistory() {
-    let entryThree = document.createElement("div");
-    entryThree.innerHTML = "Hello World";
-    entryThree.style.display = "flex"; // Flex display
-    entryThree.style.padding = "15px"; // Same padding as the css hardcoded ones
-    entryThree.style.flexDirection = "row"; // row flex direction
-    entryThree.style.justifyContent = "space between"; 
-    entriesContainer.prepend(entryThree); // Adding the div before the others as opposed to after
-} // if i remove this function, it removes the data from the other function for some reason
-
 // Show the overlay 
 function showOverlay(){
     popupOverlay.style.display = "block";
@@ -156,7 +144,7 @@ popupOverlay.addEventListener("click", function(e) {
     }
 });
 
-listHistory();
+
 showBalance();
 transferTransactHistory();
 
