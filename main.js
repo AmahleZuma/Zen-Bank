@@ -106,12 +106,17 @@ function transferTransactHistory() {
             console.log(transactHistory); // so this is an array of objects so I need to get to the specific object first
             let histList = document.createElement("div");
             histList.className = "transaction-info";
-            histList.innerHTML = `<div>
+            histList.innerHTML = `
                                        <p> ${transaction.name} </p>
                                        <p> ${transaction.transaction} </p> 
                                        <p>  ${transaction.amount} </p> 
                                        <p> ${transaction.selfref} </p> 
-                                  </div>`; // displays as a div
+
+                                  `; // displays as a div
+            histList.style.padding = "15px"
+            histList.style.display = "grid";
+            histList.style.gridTemplateColumns = "2fr 2fr 2fr 2fr 2fr";
+            histList.style.gap = "100px";                    
             entriesContainer.prepend(histList); 
         } // TODO: Find a way to specifically take only the value of the object
     }
@@ -128,7 +133,7 @@ function listHistory() {
     entryThree.style.flexDirection = "row"; // row flex direction
     entryThree.style.justifyContent = "space between"; 
     entriesContainer.prepend(entryThree); // Adding the div before the others as opposed to after
-}
+} // if i remove this function, it removes the data from the other function for some reason
 
 // Show the overlay 
 function showOverlay(){
