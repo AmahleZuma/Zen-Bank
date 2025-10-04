@@ -100,7 +100,7 @@ function transferTransactHistory() {
     } else {
         
         // this should not only log the data to the console but also create a div, put the info and prepend it
-        for (i = 0; i < transactHistory.length; i++){
+        for (let i = 0; i < transactHistory.length; i++){
             let transaction = transactHistory[i]; // turning each object into a variable
             console.log(transactHistory[i]);
             console.log(transactHistory); // so this is an array of objects so I need to get to the specific object first
