@@ -91,6 +91,8 @@ function transferTransactHistory() {
     // We are unlocking the data
     let transactHistory = JSON.parse(transactData);
 
+    let transactName = transactHistory.name;
+
     // If there is no data then we let it be
     if (transactData === null) {
         console.log("There is no data");
@@ -100,6 +102,7 @@ function transferTransactHistory() {
         // this should not only log the data to the console but also create a div, put the info and prepend it
         for (i = 0; i < transactHistory.length; i++){
             console.log(transactHistory[i]);
+            console.log(transactName)
             let histList = document.createElement("div");
             histList.innerHTML = JSON.stringify(transactHistory[i]) // will hopefully convert to string as innerhtml only accepts string
             entriesContainer.prepend(histList); 
