@@ -91,7 +91,7 @@ function transferTransactHistory() {
     // We are unlocking the data
     let transactHistory = JSON.parse(transactData);
 
-    let transactName = transactHistory.name;
+    
 
     // If there is no data then we let it be
     if (transactData === null) {
@@ -101,10 +101,17 @@ function transferTransactHistory() {
         
         // this should not only log the data to the console but also create a div, put the info and prepend it
         for (i = 0; i < transactHistory.length; i++){
+            let transaction = transactHistory[i]; // turning each object into a variable
             console.log(transactHistory[i]);
-            console.log(transactName)
+            console.log(transactHistory); // so this is an array of objects so I need to get to the specific object first
             let histList = document.createElement("div");
-            histList.innerHTML = JSON.stringify(transactHistory[i]) // will hopefully convert to string as innerhtml only accepts string
+            histList.className = "transaction-info";
+            histList.innerHTML = `<div>
+                                       <p> ${transaction.name} </p>
+                                       <p> ${transaction.transaction} </p> 
+                                       <p>  ${transaction.amount} </p> 
+                                       <p> ${transaction.selfref} </p> 
+                                  </div>`; // displays as a div
             entriesContainer.prepend(histList); 
         } // TODO: Find a way to specifically take only the value of the object
     }
