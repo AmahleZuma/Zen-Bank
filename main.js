@@ -7,6 +7,12 @@ const entriesContainer = document.getElementById("entries-container");
 const submitOrder = document.getElementById("submit-order"); // this is a constant and can never change
 const balance = document.getElementById("balance");
 
+// History chart has to accomodate the entry container
+recentHistory.style.width = "800px";
+
+// Try make the entries container smaller
+entriesContainer.style.width = "750px";
+
 
 // Show the balance
 function showBalance() {
@@ -107,12 +113,15 @@ function transferTransactHistory() {
             let histList = document.createElement("div");
             histList.className = "transaction-info";
             histList.innerHTML = `
-                                       <p> ${transaction.name} </p>
-                                       <p> ${transaction.transaction} </p> 
-                                       <p>  ${transaction.amount} </p> 
-                                       <p> ${transaction.selfref} </p> 
+                                       <p> Recipienrt: ${transaction.name} </p>
+                                       <p> Type: ${transaction.transaction} </p> 
+                                       <p> Refernece: ${transaction.selfref} </p> 
+                                       <p> Amount: ${transaction.amount} </p> 
+                                       
 
                                   `; // displays as a div
+            histList.style.marginLeft = "25px";
+            histList.style.width = "900px"
             histList.style.padding = "15px"
             histList.style.display = "grid";
             histList.style.gridTemplateColumns = "2fr 2fr 2fr 2fr 2fr";
