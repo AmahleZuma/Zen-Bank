@@ -14,9 +14,21 @@ recentHistory.style.width = "800px";
 entriesContainer.style.width = "750px";
 
 
+// The value of the updated balance
+let value;
+
+
+updateBalance(valueOfBalance) {
+    let balanceValue = valueOfBalance;
+    return
+}
+
 // Show the balance
-function showBalance() {
-    balance.innerHTML = "R500,00";
+function showBalance(monetaryValue) {
+    value = monetaryValue
+    value = 10000
+    
+    balance.innerHTML = "R" + value.toString();
 
 }
 
@@ -59,7 +71,19 @@ submitOrder.addEventListener("click", function transactInfo() {
    
 
    saveTransactData(formData);
-  
+
+   if (transactType === "pay") {
+    let value = balance;
+    value = value-transactAmount;
+
+   updateBalance(value)
+
+
+   } else{
+    alert("Requesting please wait!");
+   };
+
+
 
    return
 })
