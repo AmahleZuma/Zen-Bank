@@ -13,33 +13,37 @@ recentHistory.style.width = "800px";
 // Try make the entries container smaller
 entriesContainer.style.width = "750px";
 
-
-// The value of the updated balance
-let value;
+let currentBalance = 10000
 
 
-updateBalance(valueOfBalance) {
-    let balanceValue = valueOfBalance;
-    return
+
+function updateBalance(newBalance) {
+    currentBalance = newBalance;
+    showBalance(currentBalance);
+    return;
 }
 
 // Show the balance
 function showBalance(monetaryValue) {
-    value = monetaryValue
-    value = 10000
+   if (monetaryValue !== undefined) {
+    currentBalance = monetaryValue;
+   }
     
-    balance.innerHTML = "R" + value.toString();
+    balance.innerHTML = "R" + currentBalance.toString();
 
 }
 
 
 // This tells us that the submit button has been clicked
-submitOrder.addEventListener("click", function checkOrderSubmit() {
+submitOrder.addEventListener("click", function checkOrderSubmit(e) {
+    e.preventDefault();
     console.log("Your order has been submitted and will be processed right now!")
 })
 
 //information from the submission form:
-submitOrder.addEventListener("click", function transactInfo() {
+submitOrder.addEventListener("click", function transactInfo(e) {
+
+    e.preventDefault();
 
     // first bucket the values will drip into
     let recName = document.getElementById("name").value.trim(); // name of the person you want to send money to (recipient)
@@ -73,16 +77,26 @@ submitOrder.addEventListener("click", function transactInfo() {
    saveTransactData(formData);
 
    if (transactType === "pay") {
-    let value = balance;
-    value = value-transactAmount;
+    let amountToDeduct = parseInt(transactAmount);
 
-   updateBalance(value)
+    if (isNaN(amountToDeduct)) {
+        alert("Please input a valid Number!");
+        return;
+    }
+
+    let newBalance = currentBalance - amountToDeduct;
+
+
+   updateBalance(newBalance)
 
 
    } else{
     alert("Requesting please wait!");
    };
 
+   
+    hideOverlay(); // Close the popup
+    transactForm.reset(); // Clear all form inputs
 
 
    return
@@ -137,9 +151,9 @@ function transferTransactHistory() {
             let histList = document.createElement("div");
             histList.className = "transaction-info";
             histList.innerHTML = `
-                                       <p> Recipienrt: ${transaction.name} </p>
+                                       <p> Recipient: ${transaction.name} </p>
                                        <p> Type: ${transaction.transaction} </p> 
-                                       <p> Refernece: ${transaction.selfref} </p> 
+                                       <p> Reference: ${transaction.selfref} </p> 
                                        <p> Amount: ${transaction.amount} </p> 
                                        
 
