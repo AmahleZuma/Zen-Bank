@@ -196,12 +196,3 @@ showBalance();
 transferTransactHistory();
 
 
-/*
-TODO
-I need to make a function that:
-1. makes a new div
-2. edits the elements accordingly(Transaction Type + Reference, Date, Amount)
-
-*/
-
-// Have to study today so I will write some code tomorrow
