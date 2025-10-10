@@ -13,15 +13,17 @@ recentHistory.style.width = "800px";
 // Try make the entries container smaller
 entriesContainer.style.width = "750px";
 
-let currentBalance = 10000
+
 
 
 
 function updateBalance(newBalance) {
     currentBalance = newBalance;
+    localStorage.setItem('currentBalance', newBalance)
     showBalance(currentBalance);
-    return;
 }
+
+let currentBalance = parseInt(localStorage.getItem('currentBalance')) || 10000
 
 // Show the balance
 function showBalance(monetaryValue) {
