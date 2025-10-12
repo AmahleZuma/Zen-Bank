@@ -21,15 +21,17 @@ export function displayTransaction(containerID) {
             console.log(transactHistory[i]);
             console.log(transactHistory); // so this is an array of objects so I need to get to the specific object first
             let histList = document.createElement("div");
+            let amountClass = transaction.transaction === "pay" ? "amount-red" : "amount-green";
             histList.className = "transaction-info";
             histList.innerHTML = `
                                        <p> Recipient: ${transaction.name} </p>
                                        <p> Type: ${transaction.transaction} </p> 
                                        <p> Reference: ${transaction.selfref} </p> 
-                                       <p> Amount: ${transaction.amount} </p> 
+                                       <p class="${amountClass}"> R ${transaction.amount} </p> 
                                        
 
                                   `; // displays as a div
+
             histList.style.marginLeft = "25px";
             histList.style.width = "900px"
             histList.style.padding = "15px"

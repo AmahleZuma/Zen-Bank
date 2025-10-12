@@ -216,6 +216,15 @@ hr {
     scrollbar-width: none;
 }
 
+/* Transaction type colors*/
+.amount-red {
+    color: red;
+}
+
+.amount-green {
+    color: green;
+}
+
 /* These are the entries */
 .entry {
     padding: 15px;
@@ -224,10 +233,3 @@ hr {
     justify-content: space-between;
 }
 
-#amount-red {
-    color: red;
-}
-
-#amount-green {
-    color: green;
-}

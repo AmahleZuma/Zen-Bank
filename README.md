@@ -26,3 +26,17 @@ Yes
 8. Store the info succesively  ✅ Done! (22/09/2025)
 9. Have the transactions actually affect the amount of money in my balance ✅ Done! (08/10/2025)
 
+# Project Complete (13/10/2025)
+
+
+### Screenshots
+
+
+### Dash Board
+![Dashboard](images/dash.png)
+
+### Transaction Form
+![Transaction Form](images/form.png)
+
+### History Page
+![History Page](images/history.png)
