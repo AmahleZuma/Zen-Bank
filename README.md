@@ -5,27 +5,51 @@
 ### Great UX Design? 
 Nope, I'm not a Soy Latte drinking, Sunset lovers.
 
+
+
+
 ### Did you use the latest, cutting edge, blazingly fast JS framework?
 No, I just used HTML, CSS and JavaScript. I am big beginner, big noob. Noob use bone knife before marble knife.
+
+
+
 
 ### Is it practical or does it just work as a Proof of Concept?
 Yes.
 
+
+
+
 ### What do you use to store your financial data?
 Local Storage, it's the superior option. Next question.
+
+
+
 
 ### Is your database secure?
 Huh?
 
+
+
+
 ### Are there timestamps to track transactions in case of fraud?
 Me no understand, me want different question.
+
+
+
 
 ### Are there anti-fraud/risk management mechanics?
 Those are big words buddy, let's move this along.
 
 
+
+
+
 ### What inspired you to make this?
 I don't have a PS5/gaming PC. It was this project or staring at paint dry on a wall...or reading the ingredients off of a chocolate cookie box.
+
+
+
 
 ### TODO (NOT IN ANY PARTICULAR ORDER)
 1. Watch video on DOM Manipulation, as I have literally just been googling and failing my way forward, which is a painfully slow process.  ✅ Done...it felt like pulling my teeth out(17/09/2025)
