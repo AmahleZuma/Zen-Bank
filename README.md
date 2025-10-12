@@ -29,7 +29,7 @@ Yes
 # Project Complete (13/10/2025)
 
 
-### Screenshots
+### Screenshots & Demo
 
 
 ### Dash Board
@@ -40,3 +40,6 @@ Yes
 
 ### History Page
 ![History Page](images/history.png)
+
+### Demo
+![Demo] (images/demo.gif)
