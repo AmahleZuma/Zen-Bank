@@ -1,3 +1,6 @@
+import { displayTransaction } from "./transactiondisplay.js";
+
+
 const transactForm = document.getElementById("transact-form");
 const newtransaction = document.getElementById("newtransaction");
 const popupOverlay = document.getElementById("popup-overlay");
@@ -15,7 +18,7 @@ entriesContainer.style.width = "750px";
 
 
 
-
+let currentBalance = parseInt(localStorage.getItem('currentBalance')) || 10000
 
 function updateBalance(newBalance) {
     currentBalance = newBalance;
@@ -23,7 +26,7 @@ function updateBalance(newBalance) {
     showBalance(currentBalance);
 }
 
-let currentBalance = parseInt(localStorage.getItem('currentBalance')) || 10000
+
 
 // Show the balance
 function showBalance(monetaryValue) {
@@ -77,7 +80,8 @@ submitOrder.addEventListener("click", function transactInfo(e) {
    
 
    saveTransactData(formData);
-   transferTransactHistory(); // calling it manually so that the entries container will update...I fucking hate this project
+   //  Transacthistory display goes here
+   displayTransaction("entries-container") // calling it here so that the entries container will update...I fucking hate this project
 
    if (transactType === "pay") {
     let amountToDeduct = parseInt(transactAmount);
@@ -131,48 +135,8 @@ function saveTransactData(transactData) {
     
 };
 
-// This function is meant to take the data and transfer it to the history tab
-function transferTransactHistory() {
-    // LocalStorage data
-    let  transactData = localStorage.getItem('transactionFormData');
-    // We are unlocking the data
-    let transactHistory = JSON.parse(transactData);
 
-    
 
-    // If there is no data then we let it be
-    if (transactData === null) {
-        console.log("There is no data");
-    // or else we loop through it and log it on the console
-    } else {
-        
-        entriesContainer.innerHTML = ''; // clear the entires to avoid duplicates
-        // this should not only log the data to the console but also create a div, put the info and prepend it
-        for (let i = 0; i < transactHistory.length; i++){
-            let transaction = transactHistory[i]; // turning each object into a variable
-            console.log(transactHistory[i]);
-            console.log(transactHistory); // so this is an array of objects so I need to get to the specific object first
-            let histList = document.createElement("div");
-            histList.className = "transaction-info";
-            histList.innerHTML = `
-                                       <p> Recipient: ${transaction.name} </p>
-                                       <p> Type: ${transaction.transaction} </p> 
-                                       <p> Reference: ${transaction.selfref} </p> 
-                                       <p> Amount: ${transaction.amount} </p> 
-                                       
-
-                                  `; // displays as a div
-            histList.style.marginLeft = "25px";
-            histList.style.width = "900px"
-            histList.style.padding = "15px"
-            histList.style.display = "grid";
-            histList.style.gridTemplateColumns = "2fr 2fr 2fr 2fr 2fr";
-            histList.style.gap = "100px";                    
-            entriesContainer.prepend(histList); 
-        } // TODO: Find a way to specifically take only the value of the object
-    }
-
-}
 
 // Show the overlay 
 function showOverlay(){
@@ -197,6 +161,7 @@ popupOverlay.addEventListener("click", function(e) {
 
 
 showBalance();
-transferTransactHistory();
+//  Transacthistory display goes here
+displayTransaction("entries-container")
 
 
