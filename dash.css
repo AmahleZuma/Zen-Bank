@@ -8,6 +8,9 @@ body {
     margin-left: 50px;
     color: white;
     cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
 }
 
 /* Navbar styling */
@@ -17,6 +20,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 90px;
 }
 
 .navbar ul {
@@ -29,19 +34,39 @@ body {
     margin-right: 900px;
 }
 
-.navbar li {
-    margin-right: 100px;
+.nav-element {
+    margin-right: 150px;
+    padding: 15px 20px 15px 20px;
+}
+
+/* some more fine adjustments */
+#dash-element {
+    border: #08d01f 1px solid;
+    border-radius: 200px;
+    background-color: #08d01f;
+}
+
+/* some fine adjustments */
+#hist-element {
+    width: 97.817px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    padding-top: 23px;
     text-align: center;
     border-radius: 50px;
     width: 78px;
     height: 20px;
 }
+
+.navlink {
+    font-size: 20px;
+}
+
 
 /* transaction container styling */
 .transact-container {

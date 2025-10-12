@@ -9,12 +9,15 @@ body {
     color: white;
 }
 
+/* Navbar styling */
 .navbar {
     margin: 0px;
     background-color:  #07A219;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 90px;
 }
 
 .navbar ul {
@@ -27,21 +30,39 @@ body {
     margin-right: 900px;
 }
 
-.navbar li {
-    margin-right: 100px;
+.nav-element {
+    margin-right: 150px;
+    padding: 15px 20px 15px 20px;
+}
+
+/* some more fine adjustments */
+#dash-element {
+    /*vibes*/
+}
+
+/* some fine adjustments */
+#hist-element {
+    width: 97.817px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: #08d01f 1px solid;
+    border-radius: 200px;
+    background-color: #08d01f;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    padding-top: 23px;
     text-align: center;
     border-radius: 50px;
     width: 78px;
     height: 20px;
 }
 
-
+.navlink {
+    font-size: 20px;
+}
 
 
 /* History Container */
