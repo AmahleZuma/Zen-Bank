@@ -77,6 +77,7 @@ submitOrder.addEventListener("click", function transactInfo(e) {
    
 
    saveTransactData(formData);
+   transferTransactHistory(); // calling it manually so that the entries container will update...I fucking hate this project
 
    if (transactType === "pay") {
     let amountToDeduct = parseInt(transactAmount);
@@ -145,6 +146,7 @@ function transferTransactHistory() {
     // or else we loop through it and log it on the console
     } else {
         
+        entriesContainer.innerHTML = ''; // clear the entires to avoid duplicates
         // this should not only log the data to the console but also create a div, put the info and prepend it
         for (let i = 0; i < transactHistory.length; i++){
             let transaction = transactHistory[i]; // turning each object into a variable
