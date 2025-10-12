@@ -1,21 +1,33 @@
-# ZenPay, a stupidly simple way to send and receive cash...emphasis on stupid
+# ZenPay, a stupidly simple way to send and request(and hopefully receive) cash...emphasis on stupid though
 
 # FAQs
 
-**Security? Nah, we are not for that**
-Just give us your username and password. We promise not to **not** hash it...or "mistakingly" share it on Twitter for all to see.
-**Source:** Trust us bro
+### Great UX Design? 
+Nope, I'm not a Soy Latte drinking, Sunset lovers.
 
-**Great UX Design? Nope, not all of us are Soy Latte drinking hippies(No offence to my hippies)**
-Just basic HTML, CSS and some functional JS bro
+### Did you use the latest, cutting edge, blazingly fast JS framework?
+No, I just used HTML, CSS and JavaScript. I am big beginner, big noob. Noob use bone knife before marble knife.
 
-**Does it Work**
-Lol!
+### Is it practical or does it just work as a Proof of Concept?
+Yes.
 
-**What inspired you to make this?**
-Yes
+### What do you use to store your financial data?
+Local Storage, it's the superior option. Next question.
 
-# TODO (NOT IN ANY PARTICULAR ORDER)
+### Is your database secure?
+Huh?
+
+### Are there timestamps to track transactions in case of fraud?
+Me no understand, me want different question.
+
+### Are there anti-fraud/risk management mechanics?
+Those are big words buddy, let's move this along.
+
+
+### What inspired you to make this?
+I don't have a PS5/gaming PC. It was this project or staring at paint dry on a wall...or reading the ingredients off of a chocolate cookie box.
+
+### TODO (NOT IN ANY PARTICULAR ORDER)
 1. Watch video on DOM Manipulation, as I have literally just been googling and failing my way forward, which is a painfully slow process.  ✅ Done...it felt like pulling my teeth out(17/09/2025)
 2. Create an event listener for the transaction form submit button. ✅ Done! (12/09/2025)
 3. Connect the information in the transaction form to the submit button. ✅ Done! (16/09/2025)
