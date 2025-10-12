@@ -42,4 +42,4 @@ Yes
 ![History Page](images/history.png)
 
 ### Demo
-![Demo] (images/demo.gif)
+![Demo](images/demo.gif)
