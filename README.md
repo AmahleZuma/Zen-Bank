@@ -6,6 +6,9 @@
 A simple payment dashboard built with vanilla HTML, CSS, and JavaScript. 
 Create transactions, track your balance, and view transaction history.
 
+# Check it out:
+https://amahlezuma.github.io/Zen-Bank/index.html
+
 
 
 # FAQs
