@@ -1,5 +1,13 @@
 # ZenPay, a stupidly simple way to send and request(and hopefully receive) cash...emphasis on stupid though
 
+
+# A little more about ZenPay
+
+A simple payment dashboard built with vanilla HTML, CSS, and JavaScript. 
+Create transactions, track your balance, and view transaction history.
+
+
+
 # FAQs
 
 ### Great UX Design? 
@@ -15,13 +23,14 @@ No, I just used HTML, CSS and JavaScript. I am big beginner, big noob. Noob use 
 
 
 ### Is it practical or does it just work as a Proof of Concept?
-Yes.
+It is merely a Proof Of Concept. I wanted to see if something like this could be built. Obviously there is a lot that would go into a production ready product but I was just curious.
 
 
 
 
 ### What do you use to store your financial data?
-Local Storage, it's the superior option. Next question.
+Local Storage. Yes, I know this is terrible for production. No, I don't care. 
+This is a learning project, not a bank.
 
 
 
@@ -63,6 +72,20 @@ I don't have a PS5/gaming PC. It was this project or staring at paint dry on a w
 9. Have the transactions actually affect the amount of money in my balance ✅ Done! (08/10/2025)
 
 # Project Complete (13/10/2025)
+
+# What did I learn?
+
+- DOM Maniuplation.
+- How to debug JavaScript and CSS.
+- LocalStorage.
+- ES6 Modules.
+- When I would need to use a loop (no joke, this always bugged me)
+- Template Literals
+- Arrays/Objects && Array Nethods
+
+# Note from the developer:
+
+I wanted to learn HTML, CSS and JavaScript. I also hate tutorial hell and tutorials of any kind. So I dedicated less than 2 months to building this dumpster fire of a project. Some engineer with 1+ years of experience could whip this up in a week and slap it in a PowerPoint presentation to show their Project Manager, but I am proud regardless, because this is the one project I genuinely commited to, and actually finished(technically). What started out as a simple 'I want to understand how HTML forms work, how is the user data processed? How is it validated? Where does it go? turned into this little eWallet Proof of Concept. I don't plan on changing anything right now, I might add the timestamp a little later when I'm rested. If you love it, great. If you hate it...same here bro, but I hate it with pride in my heart. If you hate it and believe you can do better, I encourage you to make something better. It would make me happy to know I lit a fire in one of you and got you to make something cool and significantly better. That's it from me man. Cheers.
 
 
 ### Screenshots & Demo
